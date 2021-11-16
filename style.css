@@ -130,53 +130,64 @@ body {
 
     #header_desktop {
         display: block;
-        min-height: 100%;
         mix-blend-mode: multiply;
-        opacity: 70%;
+        opacity: 75%;
     }
 
     #header_desktop_container {
+        justify-self: center;
+        align-self: center;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         overflow-x: hidden;
         width: 100%;
-        height: 100%;
     }
 
     body {
-        grid-template-columns: 11.5vw auto 11.5vw;
+        grid-template-columns: 2rem auto 2rem;
         grid-template-rows: 10rem auto 10rem;
     }
 
     #card {
+        margin-top: 1rem;
+        height: 446px;
+        max-width: 1110px;
         display: grid;
         grid-template-columns: 1fr min(50%, 540px);
-        grid-template-rows: 5rem repeat(2, auto) 5rem;
+        grid-template-rows: auto auto;
     }
 
     #header_container {
         grid-column: 2 / 3;
-        grid-row: 1 / 5;
+        grid-row: 1 / 3;
 
-
-        width: 100%;
-        height: 100%;
         border-radius: 0;
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+        margin: 0;
     }
 
     #main_container {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
+        text-align: left;
     }
 
     #footer_container {
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
 
         flex-direction: row;
+        justify-content: start;
+    }
+    
+    #stat_1, #stat_2, #stat_3 {
+        margin: 0 1rem;
+    }
+
+    #stat_1 {
+        margin-left: 0;
     }
 
 }
