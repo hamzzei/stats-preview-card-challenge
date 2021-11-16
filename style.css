@@ -118,7 +118,7 @@ body {
     text-transform: uppercase;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 
     #card, #header_container, #main_container, #footer_container {
         max-width: 100%;
@@ -172,22 +172,39 @@ body {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         text-align: left;
+        margin-left: 4.5rem;
+        margin-right: 8rem;
     }
 
     #footer_container {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        margin-left: 4.5rem;
 
         flex-direction: row;
         justify-content: start;
     }
     
     #stat_1, #stat_2, #stat_3 {
-        margin: 0 1rem;
+        margin: 0 2.1rem;
+        text-align: left;
     }
 
     #stat_1 {
         margin-left: 0;
+    }
+
+    #main_heading {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .stat_heading {
+        font-size: 1.4rem;
+    }
+
+    .stat_text {
+        font-size: 0.8rem;
     }
 
 }
